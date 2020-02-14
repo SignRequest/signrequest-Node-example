@@ -6,7 +6,7 @@ const baseUrl = "https://yourteam.signrequest.com/api/v1";
 
 const getDocs = () => {
     request(`${baseUrl}/documents/`)
-    .set("Authorization", "Token your_token")
+    .set("Authorization", "Token your_token_here")
     .then(response => {
         console.log("Response: ", response.body)
     })

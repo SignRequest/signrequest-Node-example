@@ -1,0 +1,34 @@
+# SignRequest API - Node Client Lite
+
+## Client Developed to GET, create and send sign requests to SignRequest's API
+
+### Getting Started
+
+1) Clone this Repository
+2) Install Dependencies with: ```npm install```.
+
+### Create a Document:
+
+1) Add your team subdomain in "baseUrl".
+2) Create a Document at createdoc.js:
+i) Fill the header with your Token in "your_token_here".
+ii) Add the data in "file_from_url", a sharable url with a .pdf document.
+3) Run the code with: ```node createdoc.js```.
+
+### Create a Sign Request:
+
+1) Add your team subdomain in "baseUrl".
+
+DATA OBJECT:
+
+2) Add your newly created document in data.document.
+3) Add the signers information in data.signers[].
+4) Add the sender e-mail address at "from_email".
+5) Add your customized message.
+6) Add any additional information in the Data Object, such as "who" needs to sign or subject.
+
+For more information check the documentation for the "/signrequests/" endpoint.
+
+https://signrequest.com/api/v1/docs/#tag/signrequests
+
+7) Add your team's Token in the "createSignRequest" header at "Authorization".
