@@ -2,10 +2,8 @@ const request = require("superagent");
 
 const baseUrl = "https://yourteam.signrequest.com/api/v1";
 
-// 3) Create a Sign Request:
-
 const data = {
-    document: "https://yourteam.signrequest.com/api/v1/documents/uuid/",
+    file_from_url: "your_url_here",
     signers: [
         {
             email: 'name+1@provider.com'
@@ -18,12 +16,13 @@ const data = {
     message: "Please sign this document",
     needs_to_sign: true,
     who: "o",
-    subject: "SignTest - YourTeam API"
+    subject: "SignTest - YourTeam API",
+    auto_delete_days: 1
 };
 
 const createSignRequest = () => {
     request
-    .post(`${baseUrl}/signrequests/`)
+    .post(`${baseUrl}/signrequest-quick-create/`)
     .set("Authorization", "Token YOUR_TOKEN_HERE")
     .send(data)
     .then(response => {
