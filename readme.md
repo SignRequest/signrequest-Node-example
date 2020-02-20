@@ -32,3 +32,9 @@ For more information check the documentation for the "/signrequests/" endpoint.
 https://signrequest.com/api/v1/docs/#tag/signrequests
 
 7) Add your team's Token in the "createSignRequest" header at "Authorization".
+
+### Quickly Create Document and Sign Request:
+
+To send a request to the "/signrequest-quick-create/" endpoint, which incorporates both previous endpoints in one. You can use "quicklycreate.js" file. 
+
+For more info, check the documentation: https://signrequest.com/api/v1/docs/#tag/signrequest-quick-create
