@@ -9,6 +9,8 @@
 
 ### Create a Document:
 
+createdoc.js
+
 1) Add your team subdomain in "baseUrl".
 2) Create a Document at createdoc.js:
 i) Fill the header with your Token in "your_token_here".
@@ -16,6 +18,8 @@ ii) Add the data in "file_from_url", a sharable url with a .pdf document.
 3) Run the code with: ```node createdoc.js```.
 
 ### Create a Sign Request:
+
+createsignrequests.js
 
 1) Add your team subdomain in "baseUrl".
 
@@ -35,6 +39,20 @@ https://signrequest.com/api/v1/docs/#tag/signrequests
 
 ### Quickly Create Document and Sign Request:
 
+quicklycreate.js
+
 To send a request to the "/signrequest-quick-create/" endpoint, which incorporates both previous endpoints in one. You can use "quicklycreate.js" file. 
 
 For more info, check the documentation: https://signrequest.com/api/v1/docs/#tag/signrequest-quick-create
+
+### Cancel Sign Request
+
+cancelsr.js
+
+To cancel a sign request, send a POST request to ```/signrequests/uuid/cancel_signrequest/``` including the sign request's uuid.
+
+### Resend Sign Request
+
+resendsr.js
+
+To resend the email of a sign request, send a POST request to ```/signrequests/uuid/resend_signrequest_email/``` including the sign request's uuid.

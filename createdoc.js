@@ -18,7 +18,7 @@ getDocs();
 // 2) Create a New Document:
 
 const data = {
-    file_from_url: "your_url_here"
+    file_from_url: "your_pdf_url"
 //   template:
 //     "https://yourteam.signrequest.com/api/v1/templates/uuid/",
 //   prefill_tags: [
