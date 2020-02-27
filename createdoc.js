@@ -2,7 +2,7 @@ const request = require("superagent");
 
 const baseUrl = "https://yourteam.signrequest.com/api/v1";
 
-// 1) Get Documents:
+// 1) Get Documents
 
 const getDocs = () => {
   request(`${baseUrl}/documents/`)
