@@ -56,3 +56,7 @@ To cancel a sign request, send a POST request to ```/signrequests/uuid/cancel_si
 resendsr.js
 
 To resend the email of a sign request, send a POST request to ```/signrequests/uuid/resend_signrequest_email/``` including the sign request's uuid.
+
+### iframe.html
+
+You can use this boilerplate for an iframe embeded url of a sign request.
