@@ -1,4 +1,5 @@
 const request = require("superagent");
+const fs = require('fs');
 
 const baseUrl = "https://yourteam.signrequest.com/api/v1";
 
@@ -15,10 +16,23 @@ const getDocs = () => {
 
 getDocs();
 
+//transform File to base64
+
+const buffer = Buffer.from('demo_document.pdf', 'binary');
+
+const dataFile = fs.readFileSync(buffer);
+
+const pdf = dataFile.toString('base64');
+
+console.log(pdf)
+
 // 2) Create a New Document:
 
 const data = {
-    file_from_url: "your_pdf_url"
+    file_from_url: "your_pdf_url",
+//  file_from_content: pdf,
+//  file_from_content_name: 'demo_document.pdf',
+//  name: 'demo_document.pdf',
 //   template:
 //     "https://yourteam.signrequest.com/api/v1/templates/uuid/",
 //   prefill_tags: [
