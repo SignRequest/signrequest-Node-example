@@ -15,6 +15,8 @@ createdoc.js
 2) Create a Document at createdoc.js:
 i) Fill the header with your Token in "your_token_here".
 ii) Add the data in "file_from_url", a sharable url with a .pdf document.
+Obs: You can send a pdf document encoding it to base64, for that, use the snippet provided in 'pdf2base64.pdf'. For that, use ```file_from_content``` and ```file_from_content_name``` and ```name```.
+Obs2: To run tests, use the attached 'demo_document.pdf'.
 3) Run the code with: ```node createdoc.js```.
 
 ### Create a Sign Request:
