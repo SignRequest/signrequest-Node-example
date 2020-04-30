@@ -1,6 +1,6 @@
-# SignRequest API - Node Client Lite
+# SignRequest API - Node Example
 
-## Client Developed to GET, create and send sign requests POST to SignRequest's API
+## Example to GET, create documents and send sign requests to SignRequest's API
 
 ### Getting Started
 
