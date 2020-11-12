@@ -62,3 +62,13 @@ To resend the email of a sign request, send a POST request to ```/signrequests/u
 ### iframe.html
 
 You can use this boilerplate for an iframe embeded url of a sign request.
+
+## Create and Modify PDFs
+
+See example of how to create new and modify existing PDF documents via Node.js, containing placeholders and texts that can be sent as SignRequests. This example uses HummusJS: https://github.com/galkahana/HummusJS
+
+See:
+
+[Create PDFs with SignRequests](https://github.com/SignRequest/signrequest-Node-example/blob/master/createpdf-sr.js)
+
+[Modify PDFs with SignRequests](https://github.com/SignRequest/signrequest-Node-example/blob/master/modifypdf-sr.js)
