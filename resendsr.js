@@ -2,7 +2,7 @@ const request = require("superagent");
 
 const baseUrl = "https://yourteam.signrequest.com/api/v1";
 
-// 4) Cancel a Sign Request:
+// 4) Resend a Sign Request:
 
 const resendSignRequest = () => {
     request

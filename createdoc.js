@@ -27,6 +27,7 @@ const pdf = dataFile.toString('base64');
 console.log(pdf)
 
 // 2) Create a New Document:
+// Choose one option: a) file_from_url, b) file_from_content or c) templates
 
 const data = {
     file_from_url: "your_pdf_url",
