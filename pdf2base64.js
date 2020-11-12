@@ -2,7 +2,7 @@
 
 const fs = require('fs');
 
-const buffer = Buffer.from('demo_document.pdf', 'binary');
+const buffer = Buffer.from('./pdf/demo_document.pdf', 'binary');
 
 const data = fs.readFileSync(buffer);
 

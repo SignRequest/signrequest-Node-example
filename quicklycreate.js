@@ -4,7 +4,7 @@ const baseUrl = "https://yourteam.signrequest.com/api/v1";
 
 //transform File to base64
 
-const buffer = Buffer.from('demo_document.pdf', 'binary');
+const buffer = Buffer.from('./pdf/demo_document.pdf', 'binary');
 
 const dataFile = fs.readFileSync(buffer);
 
@@ -15,7 +15,7 @@ console.log(pdf)
 const data = {
   file_from_url: "your_url_here",
   //  file_from_content: pdf,
-  //  file_from_content_name: 'demo_document.pdf',
+  //  file_from_content_name: './pdf/demo_document.pdf',
   //  name: 'demo_document.pdf',
   signers: [
     {
