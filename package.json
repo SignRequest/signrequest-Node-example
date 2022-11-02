@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/LPascholatti/SignRequestAPI-NodeClient-Lite#readme",
   "dependencies": {
-    "hummus": "^1.0.110",
+    "hummus": "^1.0.111",
     "superagent": "^5.2.1"
   }
 }
